@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Account Transactions Page</title>
+	<script src="js/verify.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h2>Account Payments Page</h2>
+<h3>Your MSISDN: +44012345678</h3>
+
+Date:
+<button onclick="getDate()">Get Date</button>
+<p id="currentDate"></p>
+
+<form method="post">
+  Recipient MSISDN:
+  <input type="text" id="recipient_msisdn">
+  <br>
+  Amount:
+  <input type="number" id="amount">
+  <br>
+  Currency:
+  <input type="text" id="currency">
+  <br>
+  Type:
+  <input type="text" id="type">
+  <br>
+  Sub Type:
+  <input type="text" id="subtype">
+  <br>
+  Description:
+  <input type="text" id="desc">
+  <br>
+  <br><br>
+  <input type="submit" value="Submit" onclick="return makeRequest()">
+</form>
+
+</body>
+</html>
